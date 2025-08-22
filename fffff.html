@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Kazpi пример</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .search-box input[type="text"] {
+      padding: 10px;
+      font-size: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+      width: 300px;
+    }
+
+    .search-box button {
+      padding: 10px 20px;
+      font-size: 10px;
+      border: 2px solid #ccc;
+      border-left: none;
+      border-radius: 0 8px 8px 0;
+      background-color: #ccc;
+      color: white;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-box">
+    <form action="https://www.google.com/search" method="GET">
+      <input type="text" name="q" placeholder="поиск по Kaspi.kz">
+      <button type="submit">
+        <i class="fa-solid fa-cart-shopping"></i> <!-- Иконка корзины -->
+      </button>
+    </form>
+  </div>
+  <body>
+  <style>
+    font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    .row {
+      display: grid;                          /* используем сетку */
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column; /* иконка сверху, текст снизу */
+      align-items: center;
+      background: #fff;
+      padding: 20px 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      color: black;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #d60000; /* фирменный красный Kaspi */
+      margin-bottom: 10px;
+    }
+
+    .label {
+      font-size: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <a href="shop.html" class="card">
+      <i class="fa-solid fa-cart-shopping icon"></i>
+      <span class="label">Магазин</span>
+    </a>
+
+    <a href="bank.html" class="card">
+      <i class="fa-solid fa-building-columns icon"></i>
+      <span class="label">Мой банк</span>
+    </a>
+
+    <a href="payments.html" class="card">
+      <i class="fa-solid fa-credit-card icon"></i>
+      <span class="label">Платежи</span>
+    </a>
+
+    <a href="transfers.html" class="card">
+      <i class="fa-solid fa-money-bill-transfer icon"></i>
+      <span class="label">Переводы</span>
+    </a>
+
+    <a href="travel.html" class="card">
+      <i class="fa-solid fa-plane-departure icon"></i>
+      <span class="label">Travel</span>
+    </a>
+
+    <a href="gosuslugi.html" class="card">
+      <i class="fa-solid fa-landmark icon"></i>
+      <span class="label">Госуслуги</span>
+    </a>
+
+    <a href="ads.html" class="card">
+      <i class="fa-solid fa-bullhorn icon"></i>
+      <span class="label">Объявления</span>
+    </a>
+  </div>
+</body>
+</html>
